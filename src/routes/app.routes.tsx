@@ -2,7 +2,7 @@ import {
   createBottomTabNavigator,
   BottomTabNavigationProp,
 } from '@react-navigation/bottom-tabs'
-import { Exercice } from '@screens/Exercice'
+import { Exercise } from '@screens/Exercise'
 import { History } from '@screens/History'
 import { Home } from '@screens/Home'
 import { Profile } from '@screens/Profile'
@@ -74,7 +74,7 @@ export function AppRoutes() {
       />
       <Screen
         name="exercice"
-        component={Exercice}
+        component={Exercise}
         options={{
           tabBarButton: () => null,
         }}
