@@ -14,6 +14,11 @@ import { Theme } from './src/theme'
 import { Loading } from '@components/Loading'
 import { AuthContextProvider } from './src/context/AuthContext'
 
+import { OneSignal } from 'react-native-onesignal'
+
+OneSignal.initialize(process.env.KEY_ONESIGNAL_ANDROID || '')
+OneSignal.Notifications.requestPermission(true)
+
 export default function App() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold })
 
