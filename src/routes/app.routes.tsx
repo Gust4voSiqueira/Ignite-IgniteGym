@@ -17,7 +17,7 @@ type AppRoutes = {
   home: undefined
   history: undefined
   profile: undefined
-  exercice: { exerciseId: string }
+  exercise: { exerciseId: string }
 }
 
 export type AppNavigatorRoutesProps = BottomTabNavigationProp<AppRoutes>
@@ -73,7 +73,7 @@ export function AppRoutes() {
         component={Profile}
       />
       <Screen
-        name="exercice"
+        name="exercise"
         component={Exercise}
         options={{
           tabBarButton: () => null,
