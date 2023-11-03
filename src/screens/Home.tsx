@@ -20,7 +20,7 @@ export function Home() {
   const toast = useToast()
 
   function handleOpenExerciseDetails(exerciseId: string) {
-    navigation.navigate('exercice', { exerciseId })
+    navigation.navigate('exercise', { exerciseId })
   }
 
   async function fetchGroups() {
